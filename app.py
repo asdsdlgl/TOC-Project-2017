@@ -7,8 +7,8 @@ from flask import Flask, request, send_file
 from fsm import TocMachine
 
 
-API_TOKEN = 'Your Telegram API Token'
-WEBHOOK_URL = 'Your Webhook URL'
+API_TOKEN = '415445097:AAHvj794Lfuc55qMktPWXN3voQaie_pA4Gg'
+WEBHOOK_URL = 'https://eeee8454.ngrok.io/hook'
 
 app = Flask(__name__)
 bot = telegram.Bot(token=API_TOKEN)
@@ -16,7 +16,17 @@ machine = TocMachine(
     states=[
         'user',
         'state1',
-        'state2'
+        'state2',
+        'state3',
+        'state4',
+        'state5',
+        'state6',
+        'state7',
+        'state8',
+        'state9',
+        'state10',
+        'state11',
+        'state12'
     ],
     transitions=[
         {
@@ -27,15 +37,79 @@ machine = TocMachine(
         },
         {
             'trigger': 'advance',
+            'source': 'state1',
+            'dest': 'state4',
+            'conditions': 'is_going_to_state4'
+        },
+	{
+            'trigger': 'advance',
+            'source': 'state4',
+            'dest': 'state5',
+            'conditions': 'is_going_to_state5'
+        },
+	{
+            'trigger': 'advance',
+            'source': 'state5',
+            'dest': 'state6',
+            'conditions': 'is_going_to_state6'
+        },
+        {
+            'trigger': 'advance',
             'source': 'user',
             'dest': 'state2',
             'conditions': 'is_going_to_state2'
         },
         {
+            'trigger': 'advance',
+            'source': 'user',
+            'dest': 'state3',
+            'conditions': 'is_going_to_state3'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'state3',
+            'dest': 'state10',
+            'conditions': 'is_going_to_state10'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'state10',
+            'dest': 'state11',
+            'conditions': 'is_going_to_state11'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'state10',
+            'dest': 'state12',
+            'conditions': 'is_going_to_state12'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'state2',
+            'dest': 'state7',
+            'conditions': 'is_going_to_state7'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'state7',
+            'dest': 'state8',
+            'conditions': 'is_going_to_state8'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'state7',
+            'dest': 'state9',
+            'conditions': 'is_going_to_state9'
+        },
+        {
             'trigger': 'go_back',
             'source': [
-                'state1',
-                'state2'
+                'state3',
+                'state6',
+                'state8',
+                'state9',
+                'state11',
+                'state12'
             ],
             'dest': 'user'
         }
