@@ -13,7 +13,7 @@
 
 
 3. hey younger-> how could i have girlfriend? -> external condition                                                                       
-                                              -> internal condition(可以有2個分支)
+                                                       -> internal condition(可以有2個分支)
 
 
 ## Author
