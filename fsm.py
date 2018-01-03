@@ -53,6 +53,7 @@ class TocMachine(GraphMachine):
 
 
     def on_enter_state1(self, update):
+        update.message.reply_photo(open("img/1.png","rb"))
         update.message.reply_text("have read")
        # self.go_back(update)
 
@@ -60,12 +61,14 @@ class TocMachine(GraphMachine):
         print('Leaving state1')
 
     def on_enter_state2(self, update):
+        update.message.reply_photo(open("img/1.png","rb"))
         update.message.reply_text("what's wrong?")
 
     def on_exit_state2(self, update):
         print('Leaving state2')
 
     def on_enter_state3(self, update):
+        update.message.reply_photo(open("img/1.png","rb"))
         update.message.reply_text("???")
 
 
@@ -100,6 +103,7 @@ class TocMachine(GraphMachine):
         print('Leaving state7')
 
     def on_enter_state8(self, update):
+        update.message.reply_photo("https://i.imgur.com/VlMNcHM.gif")
         update.message.reply_text("LUL~Exactly Not!")
         self.go_back(update)
 
@@ -108,6 +112,7 @@ class TocMachine(GraphMachine):
 
     def on_enter_state9(self, update):
         update.message.reply_text("have read")
+        update.message.reply_photo("https://i.imgur.com/VlMNcHM.gif")
         self.go_back(update)
 
     def on_exit_state9(self, update):
@@ -121,6 +126,7 @@ class TocMachine(GraphMachine):
 
     def on_enter_state11(self, update):
         update.message.reply_text("$$$$$$$$$$$$$")
+        update.message.reply_photo(open("img/2.jpg","rb"))
         self.go_back(update)
 
     def on_exit_state11(self, update):
@@ -128,6 +134,7 @@ class TocMachine(GraphMachine):
 
     def on_enter_state12(self, update):
         update.message.reply_text("face and U don't have it")
+        update.message.reply_photo("https://media.istockphoto.com/photos/ugly-man-picture-id115907198?s=2048x2048.jpg")
         self.go_back(update)
 
     def on_exit_state12(self, update):
