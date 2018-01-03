@@ -12,7 +12,7 @@
 
 
 
-3. hey younger-> how could i have girlfriend? -> external condition
+3. hey younger-> how could i have girlfriend? -> external condition                                                                       
                                               -> internal condition(可以有2個分支)
 
 
