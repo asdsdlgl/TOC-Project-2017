@@ -4,7 +4,7 @@
 ## Usage
 我寫的是肥宅問候女生的chatbot                  
 一開始是在'user'               
-此時可以根據你說話的以下三個選擇分支，並且以"->"代表advance，chatbot會回應相對應的文字
+此時可以根據你說話的以下三個選擇分支，並且以"->"代表advance，chatbot會回應相對應的文字、圖片、網路上的圖片
 1. calling to senior sister -> hello -> why you just have read? -> tt 最後回到user
 2. calling to junior sister -> i have some tickets,duo with me? (這邊有2個分支，會回答不同答案)                   
 (1.-> how about the next weekend?最後回到user)
