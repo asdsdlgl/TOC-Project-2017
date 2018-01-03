@@ -3,6 +3,7 @@
 
 ## Usage
 一開始是在'user'
+此時可以選擇
 
 
 ## Author
