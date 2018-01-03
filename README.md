@@ -10,6 +10,10 @@
 
 (1.-> how about the next weekend?)
 (2.-> how about the next week?)
+
+
+
+
 3. hey younger-> how could i have girlfriend? -> external condition
                                               -> internal condition(可以有2個分支)
 
