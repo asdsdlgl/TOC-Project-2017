@@ -13,8 +13,8 @@
 
 
 3. hey younger-> how could i have girlfriend?(這邊有2個分支，會回答不同答案)                   
-(1.-> how about the next weekend?最後回到user)
-(2.-> how about the next week?最後回到user)
+(1.-> external condition 最後回到user)
+(2.-> internal condition 最後回到user)
 
 
 ## Author
